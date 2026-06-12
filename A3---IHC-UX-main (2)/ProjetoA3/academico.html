@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Acadêmico — Ulife</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/academico.css">
+  <link rel="icon" type="image/png" href="image/ulifeicon.png">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+  <div class="container">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <div class="logo">
+        <a href="index.html">
+          <h1>U<span>life</span></h1>
+        </a>
+      </div>
+
+      <nav>
+        <ul>
+          <li onclick="window.location.href='index.html'">
+            <i class="fa-solid fa-house"></i>
+            <span>Início</span>
+          </li>
+
+          <li class="active">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <span>Acadêmico</span>
+          </li>
+
+          <li onclick="window.location.href='financeiro.html'">
+            <i class="fa-solid fa-wallet"></i>
+            <span>Financeiro</span>
+          </li>
+
+          <li onclick="window.location.href='atividades.html'">
+            <i class="fa-solid fa-calendar-days"></i>
+            <span>Atividades</span>
+          </li>
+
+          <li>
+            <i class="fa-solid fa-book-open"></i>
+            <span>Biblioteca</span>
+          </li>
+
+          <li>
+            <i class="fa-solid fa-table-cells"></i>
+            <span>Serviços</span>
+          </li>
+
+          <li>
+            <i class="fa-solid fa-headset"></i>
+            <span>Suporte</span>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="logout">
+        <i class="fa-solid fa-arrow-right-from-bracket"></i>
+        <span>Sair</span>
+      </div>
+    </aside>
+
+    <!-- CONTEÚDO -->
+    <main>
+
+      <!-- TOPO -->
+      <header>
+        <div class="menu">
+          <i id="menu-btn" class="fa-solid fa-bars"></i>
+        </div>
+
+        <div class="icons">
+          <i class="fa-regular fa-bell"></i>
+
+          <div class="perfil-container">
+            <div class="perfil-btn">
+              <i class="fa-regular fa-user"></i>
+            </div>
+
+            <div class="perfil-menu">
+              <div class="perfil-topo">
+                <div class="foto">
+                  <i class="fa-solid fa-user"></i>
+                </div>
+                <h3>João</h3>
+                <small>Sem foto de perfil</small>
+              </div>
+
+              <ul>
+                <li><i class="fa-regular fa-address-card"></i> Meus dados</li>
+                <li><i class="fa-regular fa-folder"></i> Meus documentos</li>
+                <li><i class="fa-solid fa-wallet"></i> Meus pagamentos</li>
+                <li><i class="fa-solid fa-graduation-cap"></i> Políticas de bolsas</li>
+                <li><i class="fa-regular fa-bell"></i> Configurar notificações</li>
+                <li><i class="fa-regular fa-circle-question"></i> Ajuda</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="tema-btn" id="tema-btn">
+            <i class="fa-solid fa-moon" id="tema-icon"></i>
+          </div>
+        </div>
+      </header>
+
+      <!-- TÍTULO DA PÁGINA -->
+      <section class="page-header">
+        <div>
+          <h1>Acadêmico</h1>
+          <p>Semestre 1 — 2026 · Análise e Desenvolvimento de Sistemas</p>
+        </div>
+      </section>
+
+      <!-- CARDS DE RESUMO -->
+      <section class="ac-stats">
+
+        <div class="ac-stat-card">
+          <p>IRA geral</p>
+          <span>8.5</span>
+          <small class="badge badge-green">Bom desempenho</small>
+        </div>
+
+        <div class="ac-stat-card">
+          <p>Frequência média</p>
+          <span>87%</span>
+          <small class="badge badge-green">Regular</small>
+        </div>
+
+        <div class="ac-stat-card">
+          <p>Disciplinas ativas</p>
+          <span>3</span>
+          <small class="badge badge-green">Em curso</small>
+        </div>
+
+        <div class="ac-stat-card">
+          <p>Situação</p>
+          <span class="span-sm">Matriculado</span>
+          <small class="badge badge-green">Regular</small>
+        </div>
+
+      </section>
+
+      <!-- NOTAS + FREQUÊNCIA -->
+      <section class="ac-row-2">
+
+        <!-- NOTAS -->
+        <div class="ac-box">
+          <div class="ac-box-title">
+            <h2>Notas por disciplina</h2>
+            <a href="notas.html">Ver detalhes</a>
+          </div>
+
+          <div class="ac-disc">
+            <div class="ac-disc-icon purple">
+              <i class="fa-solid fa-code"></i>
+            </div>
+            <div class="ac-disc-info">
+              <h3>Algoritmos e programação</h3>
+              <small>Marcelo Duduchi · Marcelo Amorim</small>
+            </div>
+            <div class="ac-disc-nota">
+              <strong>8.5</strong>
+              <div class="ac-barra">
+                <div class="ac-prog" style="width: 85%; background: #7c3aed;"></div>
+              </div>
+            </div>
+          </div>
+
+          <hr class="ac-sep">
+
+          <div class="ac-disc">
+            <div class="ac-disc-icon pink">
+              <i class="fa-solid fa-network-wired"></i>
+            </div>
+            <div class="ac-disc-info">
+              <h3>
+                Academia de Futuros profissionais</h3>
+              <small>Professor a definir</small>
+            </div>
+            <div class="ac-disc-nota">
+              <strong>9.2</strong>
+              <div class="ac-barra">
+                <div class="ac-prog" style="width: 92%; background: #9b4388;"></div>
+              </div>
+            </div>
+          </div>
+
+          <hr class="ac-sep">
+
+          <div class="ac-disc">
+            <div class="ac-disc-icon teal">
+              <i class="fa-solid fa-users"></i>
+            </div>
+            <div class="ac-disc-info">
+              <h3>Interação Humano Computador e UX</h3>
+              <small>Jose Carmino · Vitor Alex</small>
+            </div>
+            <div class="ac-disc-nota">
+              <strong>7.8</strong>
+              <div class="ac-barra">
+                <div class="ac-prog" style="width: 78%; background: #2563eb;"></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- FREQUÊNCIA -->
+        <div class="ac-box">
+          <div class="ac-box-title">
+            <h2>Frequência</h2>
+            <a href="frequencia.html">Ver faltas</a>
+          </div>
+
+          <div class="ac-freq">
+            <span>Algoritmos</span>
+            <div class="ac-freq-barra">
+              <div class="ac-freq-fill" style="width: 90%; background: #7c3aed;"></div>
+            </div>
+            <strong style="color: #7c3aed;">90%</strong>
+          </div>
+
+          <div class="ac-freq">
+            <span>Futuros Profissionais</span>
+            <div class="ac-freq-barra">
+              <div class="ac-freq-fill" style="width: 95%; background: #9b4388;"></div>
+            </div>
+            <strong style="color: #9b4388;">95%</strong>
+          </div>
+
+          <div class="ac-freq">
+            <span>IHC e UX</span>
+            <div class="ac-freq-barra">
+              <div class="ac-freq-fill" style="width: 75%; background: #991b1b;"></div>
+            </div>
+            <strong style="color: #991b1b;">75%</strong>
+          </div>
+
+          <div class="ac-aviso">
+            <i class="fa-solid fa-circle-info"></i>
+            <p>Máximo de 25% de faltas permitido por disciplina.</p>
+          </div>
+
+        </div>
+
+      </section>
+
+      <!-- DOCUMENTOS + HISTÓRICO -->
+      <section class="ac-row-3">
+
+        <!-- DOCUMENTOS -->
+        <div class="ac-box">
+          <div class="ac-box-title">
+            <h2>Documentos acadêmicos</h2>
+            <a href="#">Ver todos</a>
+          </div>
+
+          <div class="ac-doc">
+            <div class="ac-doc-icon">
+              <i class="fa-regular fa-file-lines"></i>
+            </div>
+            <div class="ac-doc-info">
+              <h3>Declaração de matrícula</h3>
+              <small>Semestre atual</small>
+              <a href="#" class="ac-doc-baixar">
+                <i class="fa-solid fa-download"></i> Baixar PDF
+              </a>
+            </div>
+          </div>
+
+          <hr class="ac-sep">
+
+          <div class="ac-doc">
+            <div class="ac-doc-icon">
+              <i class="fa-regular fa-clipboard"></i>
+            </div>
+            <div class="ac-doc-info">
+              <h3>Histórico escolar</h3>
+              <small>Atualizado em jun. 2026</small>
+              <a href="#" class="ac-doc-baixar">
+                <i class="fa-solid fa-download"></i> Baixar PDF
+              </a>
+            </div>
+          </div>
+
+          <hr class="ac-sep">
+
+          <div class="ac-doc">
+            <div class="ac-doc-icon">
+              <i class="fa-solid fa-certificate"></i>
+            </div>
+            <div class="ac-doc-info">
+              <h3>Atestado de frequência</h3>
+              <small>Gerado sob demanda</small>
+              <a href="#" class="ac-doc-baixar">
+                <i class="fa-solid fa-download"></i> Baixar PDF
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- HISTÓRICO -->
+        <div class="ac-box">
+          <div class="ac-box-title">
+            <h2>Histórico de semestres</h2>
+            <a href="#">Ver completo</a>
+          </div>
+
+          <div class="ac-hist">
+            <div class="ac-hist-info">
+              <h3>2026 — Semestre 1</h3>
+              <small>4 disciplinas cursadas</small>
+            </div>
+            <div class="ac-hist-nota">
+              <strong>8.5</strong>
+              <small>IRA</small>
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+
+      <footer>© 2026 Portal Acadêmico.</footer>
+
+    </main>
+  </div>
+
+  <script>
+    const menu = document.querySelector("#menu-btn");
+    const sidebar = document.querySelector(".sidebar");
+    menu.onclick = () => sidebar.classList.toggle("close");
+  </script>
+
+  <script>
+    const perfilBtn = document.querySelector(".perfil-btn");
+    const perfilMenu = document.querySelector(".perfil-menu");
+
+    perfilBtn.addEventListener("click", function (e) {
+      perfilMenu.classList.toggle("active");
+      e.stopPropagation();
+    });
+
+    perfilMenu.addEventListener("click", e => e.stopPropagation());
+    document.addEventListener("click", () => perfilMenu.classList.remove("active"));
+  </script>
+
+  <script>
+    const temaBtn = document.getElementById("tema-btn");
+    const temaIcon = document.getElementById("tema-icon");
+
+    temaBtn.addEventListener("click", () => {
+      document.body.classList.toggle("dark-mode");
+
+      if (document.body.classList.contains("dark-mode")) {
+        temaIcon.classList.remove("fa-moon");
+        temaIcon.classList.add("fa-sun");
+        localStorage.setItem("tema", "dark");
+      } else {
+        temaIcon.classList.remove("fa-sun");
+        temaIcon.classList.add("fa-moon");
+        localStorage.setItem("tema", "light");
+      }
+    });
+
+    if (localStorage.getItem("tema") === "dark") {
+      document.body.classList.add("dark-mode");
+      temaIcon.classList.remove("fa-moon");
+      temaIcon.classList.add("fa-sun");
+    }
+  </script>
+
+</body>
+
+</html>

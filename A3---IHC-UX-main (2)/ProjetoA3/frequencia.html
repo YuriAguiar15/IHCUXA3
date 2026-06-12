@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frequência — Ulife</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/frequencia.css">~
+  <link rel="icon" type="image/png" href="image/ulifeicon.png">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+  <div class="container">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <div class="logo">
+        <h1>U<span>life</span></h1>
+      </div>
+
+      <nav>
+        <ul>
+          <li onclick="window.location.href='index.html'">
+            <i class="fa-solid fa-house"></i>
+            <span>Início</span>
+          </li>
+
+          <li class="active" onclick="window.location.href='academico.html'">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <span>Acadêmico</span>
+          </li>
+
+          <li>
+            <i class="fa-solid fa-wallet"></i>
+            <span>Financeiro</span>
+          </li>
+
+          <li onclick="window.location.href='atividades.html'">
+            <i class="fa-solid fa-calendar-days"></i>
+            <span>Atividades</span>
+          </li>
+
+          <li>
+            <i class="fa-solid fa-book-open"></i>
+            <span>Biblioteca</span>
+          </li>
+
+          <li>
+            <i class="fa-solid fa-table-cells"></i>
+            <span>Serviços</span>
+          </li>
+
+          <li>
+            <i class="fa-solid fa-headset"></i>
+            <span>Suporte</span>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="logout">
+        <i class="fa-solid fa-arrow-right-from-bracket"></i>
+        <span>Sair</span>
+      </div>
+    </aside>
+
+    <!-- CONTEÚDO -->
+    <main>
+
+      <!-- TOPO -->
+      <header>
+        <div class="menu">
+          <i id="menu-btn" class="fa-solid fa-bars"></i>
+        </div>
+
+        <div class="icons">
+          <i class="fa-regular fa-bell"></i>
+
+          <div class="perfil-container">
+            <div class="perfil-btn">
+              <i class="fa-regular fa-user"></i>
+            </div>
+
+            <div class="perfil-menu">
+              <div class="perfil-topo">
+                <div class="foto">
+                  <i class="fa-solid fa-user"></i>
+                </div>
+                <h3>João</h3>
+                <small>Sem foto de perfil</small>
+              </div>
+
+              <ul>
+                <li><i class="fa-regular fa-address-card"></i> Meus dados</li>
+                <li><i class="fa-regular fa-folder"></i> Meus documentos</li>
+                <li><i class="fa-solid fa-wallet"></i> Meus pagamentos</li>
+                <li><i class="fa-solid fa-graduation-cap"></i> Políticas de bolsas</li>
+                <li><i class="fa-regular fa-bell"></i> Configurar notificações</li>
+                <li><i class="fa-regular fa-circle-question"></i> Ajuda</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="tema-btn" id="tema-btn">
+            <i id="tema-icon" class="fa-solid fa-moon"></i>
+          </div>
+        </div>
+      </header>
+
+      <!-- TÍTULO -->
+      <section class="fq-page-header">
+        <h1>Frequência</h1>
+        <p>Semestre 1 — 2026 · Acompanhe sua presença em cada disciplina</p>
+      </section>
+
+      <!-- CARDS DE RESUMO -->
+      <section class="fq-stats">
+
+        <div class="fq-stat-card">
+          <p>Frequência média</p>
+          <span>87%</span>
+          <small class="fq-badge badge-green">Regular</small>
+        </div>
+
+        <div class="fq-stat-card">
+          <p>Total de aulas</p>
+          <span>52</span>
+          <small class="fq-badge badge-green">No semestre</small>
+        </div>
+
+        <div class="fq-stat-card">
+          <p>Faltas acumuladas</p>
+          <span>7</span>
+          <small class="fq-badge badge-amber">Atenção</small>
+        </div>
+
+        <div class="fq-stat-card">
+          <p>Faltas restantes</p>
+          <span>6</span>
+          <small class="fq-badge badge-amber">Limite: 25%</small>
+        </div>
+
+      </section>
+
+      <!-- ALERTA -->
+      <div class="fq-alerta">
+        <i class="fa-solid fa-triangle-exclamation"></i>
+        <p>
+          <strong>Interação Humano Computador e UX</strong> está com 75% de frequência — e já atingiu o limite de faltas permitido até o momento.
+        </p>
+      </div>
+
+      <!-- FREQUÊNCIA + CALENDÁRIO -->
+      <section class="fq-row">
+
+        <!-- FREQUÊNCIA POR DISCIPLINA -->
+        <div class="fq-box">
+
+          <div class="fq-box-title">
+            <h2>Frequência por disciplina</h2>
+          </div>
+
+          <!-- ALGORITMOS -->
+          <div class="fq-disc">
+            <div class="fq-disc-top">
+              <div class="fq-disc-icon purple">
+                <i class="fa-solid fa-code"></i>
+              </div>
+              <div class="fq-disc-info">
+                <h3>Algoritmos e programação</h3>
+                <small>16 aulas · 2 faltas</small>
+              </div>
+              <span class="fq-pct" style="color: #7c3aed;">90%</span>
+            </div>
+            <div class="fq-barra">
+              <div class="fq-prog" style="width: 90%; background: #7c3aed;"></div>
+            </div>
+            <div class="fq-disc-detail">
+              <small>Faltas: 2 de 16</small>
+              <span class="fq-badge badge-green">Seguro</span>
+            </div>
+          </div>
+
+          <hr class="fq-sep">
+
+          <!-- Futuros Profissionais -->
+          <div class="fq-disc">
+            <div class="fq-disc-top">
+              <div class="fq-disc-icon pink">
+                <i class="fa-solid fa-network-wired"></i>
+              </div>
+              <div class="fq-disc-info">
+                <h3>Academia de Futuros Profissionais</h3>
+                <small>20 aulas · 1 falta</small>
+              </div>
+              <span class="fq-pct" style="color: #9b4388;">95%</span>
+            </div>
+            <div class="fq-barra">
+              <div class="fq-prog" style="width: 95%; background: #9b4388;"></div>
+            </div>
+            <div class="fq-disc-detail">
+              <small>Faltas: 1 de 20</small>
+              <span class="fq-badge badge-green">Seguro</span>
+            </div>
+          </div>
+
+          <hr class="fq-sep">
+
+          <!-- IHC e UX -->
+          <div class="fq-disc">
+            <div class="fq-disc-top">
+              <div class="fq-disc-icon blue">
+                <i class="fa-solid fa-users"></i>
+              </div>
+              <div class="fq-disc-info">
+                <h3>Interação Humano Computador e UX</h3>
+                <small>16 aulas · 4 faltas</small>
+              </div>
+              <span class="fq-pct" style="color: #dc2626;">75%</span>
+            </div>
+            <div class="fq-barra">
+              <div class="fq-prog" style="width: 75%; background: #dc2626;"></div>
+            </div>
+            <div class="fq-disc-detail">
+              <small>Faltas: 4 de 16</small>
+              <span class="fq-badge badge-red">Atenção</span>
+            </div>
+          </div>
+
+          <hr class="fq-sep">
+
+        </div>
+
+        <!-- COLUNA DIREITA -->
+        <div class="fq-col-right">
+
+          <!-- CALENDÁRIO -->
+          <div class="fq-box">
+            <div class="fq-box-title">
+              <h2>Calendário — Maio 2026</h2>
+            </div>
+
+            <div class="fq-calendario">
+              <div class="cal-header">Dom</div>
+              <div class="cal-header">Seg</div>
+              <div class="cal-header">Ter</div>
+              <div class="cal-header">Qua</div>
+              <div class="cal-header">Qui</div>
+              <div class="cal-header">Sex</div>
+              <div class="cal-header">Sáb</div>
+
+              <!-- Semana 1 -->
+              <div class="cal-day empty"></div>
+              <div class="cal-day empty"></div>
+              <div class="cal-day empty"></div>
+              <div class="cal-day empty"></div>
+              <div class="cal-day empty"></div>
+              <div class="cal-day presente">1</div>
+              <div class="cal-day">2</div>
+              <div class="cal-day">3</div>
+              <div class="cal-day presente">4</div>
+              <div class="cal-day presente">5</div>
+              <div class="cal-day presente">6</div>
+              <div class="cal-day presente">7</div>
+
+              <!-- Semana 2 -->
+              <div class="cal-day falta">8</div>
+              <div class="cal-day">9</div>
+              <div class="cal-day">10</div>
+              <div class="cal-day presente">11</div>
+              <div class="cal-day presente">12</div>
+              <div class="cal-day">13</div>
+              <div class="cal-day presente">14</div>
+
+              <!-- Semana 3 -->
+              <div class="cal-day presente">15</div>
+              <div class="cal-day">16</div>
+              <div class="cal-day">17</div>
+              <div class="cal-day presente">18</div>
+              <div class="cal-day falta">19</div>
+              <div class="cal-day presente">20</div>
+              <div class="cal-day presente">21</div>
+
+              <!-- Semana 4 -->
+              <div class="cal-day falta">22</div>
+              <div class="cal-day">23</div>
+              <div class="cal-day">24</div>
+              <div class="cal-day presente">25</div>
+              <div class="cal-day presente">26</div>
+              <div class="cal-day">27</div>
+              <div class="cal-day presente">28</div>
+
+              <!-- Semana 5 -->
+              <div class="cal-day presente">29</div>
+              <div class="cal-day">30</div>
+              <div class="cal-day hoje">31</div>
+            </div>
+
+            <div class="cal-legenda">
+              <div class="cal-leg">
+                <div class="leg-dot" style="background: #065f46; border: 1px solid #065f46;"></div>
+                Presente
+              </div>
+              <div class="cal-leg">
+                <div class="leg-dot" style="background: #991b1b; border: 1px solid #991b1b;"></div>
+                Falta
+              </div>
+              <div class="cal-leg">
+                <div class="leg-dot" style="background: #7c3aed;"></div>
+                Hoje
+              </div>
+            </div>
+          </div>
+
+          <!-- RESUMO DO SEMESTRE -->
+          <div class="fq-box">
+            <div class="fq-box-title">
+              <h2>Resumo do semestre</h2>
+            </div>
+
+            <div class="fq-resumo-row">
+              <span>Aulas previstas</span>
+              <strong>80</strong>
+            </div>
+
+            <div class="fq-resumo-row">
+              <span>Aulas realizadas</span>
+              <strong>64</strong>
+            </div>
+
+            <div class="fq-resumo-row">
+              <span>Presenças</span>
+              <strong>56</strong>
+            </div>
+
+            <div class="fq-resumo-row">
+              <span>Faltas</span>
+              <strong>8</strong>
+            </div>
+
+            <div class="fq-resumo-row">
+              <span>Limite de faltas (25%)</span>
+              <strong>20</strong>
+            </div>
+
+            <div class="fq-resumo-row">
+              <span>Faltas disponíveis</span>
+              <strong style="color: #0f6e56;">12</strong>
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+
+      <footer>© 2026 Portal Acadêmico.</footer>
+
+    </main>
+  </div>
+
+  <script>
+    const menu = document.querySelector("#menu-btn");
+    const sidebar = document.querySelector(".sidebar");
+    menu.onclick = () => sidebar.classList.toggle("close");
+  </script>
+
+  <script>
+    const perfilBtn = document.querySelector(".perfil-btn");
+    const perfilMenu = document.querySelector(".perfil-menu");
+    perfilBtn.addEventListener("click", e => { perfilMenu.classList.toggle("active"); e.stopPropagation(); });
+    perfilMenu.addEventListener("click", e => e.stopPropagation());
+    document.addEventListener("click", () => perfilMenu.classList.remove("active"));
+  </script>
+
+  <script>
+    const temaBtn = document.getElementById("tema-btn");
+    const temaIcon = document.getElementById("tema-icon");
+
+    if (localStorage.getItem("tema") === "dark") {
+      document.body.classList.add("dark-mode");
+      temaIcon.classList.replace("fa-moon", "fa-sun");
+    }
+    temaBtn.addEventListener("click", () => {
+      document.body.classList.toggle("dark-mode");
+
+      if (document.body.classList.contains("dark-mode")) {
+        temaIcon.classList.replace("fa-moon", "fa-sun");
+        localStorage.setItem("tema", "dark");
+
+      } else {
+        temaIcon.classList.replace("fa-sun", "fa-moon");
+        localStorage.setItem("tema", "light");
+      }
+    });
+  </script>
+
+</body>
+
+</html>

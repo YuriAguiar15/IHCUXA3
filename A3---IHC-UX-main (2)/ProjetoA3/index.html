@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang=pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ulife</title>
+    <link rel="icon" type="image/png" href="image/ulifeicon.png">
+</head>
+
+<body>
+    <!DOCTYPE html>
+    <html lang="pt-br">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Portal Acadêmico</title>
+
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" type="image/png" href="image/ulifeicon.png">
+
+        <!-- Fonte -->
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+        <!-- Ícones -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    </head>
+
+    <body>
+        <div class="container">
+
+            <!-- SIDEBAR -->
+
+            <aside class="sidebar">
+                <div class="logo">
+                    <a href="index.html">
+                        <h1>U<span>life</span></h1>
+                    </a>
+                </div>
+
+                <nav>
+
+                    <ul>
+                        <li class="active">
+                            <i class="fa-solid fa-house"></i>
+                            <span>Início</span>
+                        </li>
+
+                        <li onclick="window.location.href='academico.html'">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            <span>Acadêmico</span>
+                        </li>
+
+                        <li onclick="window.location.href='financeiro.html'">
+                            <i class="fa-solid fa-wallet"></i>
+                            <span>Financeiro</span>
+                        </li>
+
+                        <li onclick="window.location.href='atividades.html'">
+                            <i class="fa-solid fa-calendar-days"></i>
+                            <span>Atividades</span>
+                        </li>
+
+                        <li>
+                            <i class="fa-solid fa-book-open"></i>
+                            <span>Biblioteca</span>
+                        </li>
+
+                        <li>
+                            <i class="fa-solid fa-table-cells"></i>
+                            <span>Serviços</span>
+                        </li>
+
+                        <li>
+                            <i class="fa-solid fa-headset"></i>
+                            <span>Suporte</span>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="logout">
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                    <span>Sair</span>
+                </div>
+            </aside>
+
+            <!-- CONTEÚDO -->
+
+            <main>
+
+                <!-- TOPO -->
+
+                <header>
+
+                    <div class="menu">
+                        <i id="menu-btn" class="fa-solid fa-bars"></i>
+                    </div>
+
+                    <div class="icons">
+
+                        <i class="fa-regular fa-bell"></i>
+
+
+                        <div class="perfil-container">
+
+                            <div class="perfil-btn">
+                                <i class="fa-regular fa-user"></i>
+                            </div>
+
+                            <div class="perfil-menu">
+
+                                <div class="perfil-topo">
+                                    <div class="foto">
+                                        <i class="fa-solid fa-user"></i>
+                                    </div>
+                                    <h3>João</h3>
+                                    <small>Sem foto de perfil</small>
+                                </div>
+
+                                <ul>
+
+                                    <li>
+                                        <i class="fa-regular fa-address-card"></i>
+                                        Meus dados
+                                    </li>
+
+                                    <li>
+                                        <i class="fa-regular fa-folder"></i>
+                                        Meus documentos
+                                    </li>
+
+                                    <li>
+                                        <i class="fa-solid fa-wallet"></i>
+                                        Meus pagamentos
+                                    </li>
+
+                                    <li>
+                                        <i class="fa-solid fa-graduation-cap"></i>
+                                        Políticas de bolsas
+                                    </li>
+
+                                    <li>
+                                        <i class="fa-regular fa-bell"></i>
+                                        Configurar notificações
+                                    </li>
+
+                                    <li>
+                                        <i class="fa-regular fa-circle-question"></i>
+                                        Ajuda
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tema-btn" id="tema-btn">
+                            <i class="fa-solid fa-moon" id="tema-icon"></i>
+                        </div>
+                    </div>
+
+                </header>
+
+                <!-- BOAS VINDAS -->
+
+                <section class="welcome">
+                    <h1>Olá, João! 👋</h1>
+                    <p>Bem-vindo(a) ao seu portal acadêmico.</p>
+                </section>
+
+                <!-- BANNER + ACESSO RAPIDO -->
+
+                <section class="top-area">
+
+                    <div class="hero">
+                        <small>Fique por dentro!</small>
+                        <h2>Sua jornada acadêmica começa aqui.</h2>
+                        <p>
+                            Acesse seus conteúdos,
+                            acompanhe suas disciplinas
+                            e muito mais.
+                        </p>
+
+                        <button>
+                            Ver novidades
+                        </button>
+                    </div>
+
+                    <div class="quick">
+                        <h2>Acesso rápido</h2>
+                        <div class="quick-grid">
+
+                            <div onclick="window.location.href='notas.html'">
+                                <i class="fa-solid fa-chart-column"></i>
+                                <p>Notas</p>
+                            </div>
+
+                            <div onclick="window.location.href='frequencia.html'">
+                                <i class="fa-regular fa-calendar"></i>
+                                <p>Frequência</p>
+                            </div>
+
+                            <div onclick="window.location.href='qda.html'">
+                                <i class="fa-solid fa-graduation-cap"></i>
+                                <p>Aulas</p>
+                            </div>
+
+                            <div onclick="window.location.href='financeiro.html'">
+                                <i class="fa-solid fa-dollar-sign"></i>
+                                <p>Financeiro</p>
+                            </div>
+
+                            <div>
+                                <i class="fa-regular fa-address-card"></i>
+                                <p>Declarações</p>
+                            </div>
+
+                            <div onclick="window.location.href='financeiro.html'">
+                                <i class="fa-regular fa-pen-to-square"></i>
+                                <p>Rematrícula</p>
+                            </div>
+
+                            <div>
+                                <i class="fa-solid fa-book"></i>
+                                <p>Biblioteca</p>
+                            </div>
+
+                            <div onclick="window.location.href='atividades.html'">
+                                <i class="fa-regular fa-clipboard"></i>
+                                <p>Atividades</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+                <!-- CARDS INFERIORES -->
+
+                <section class="bottom-area">
+
+                    <!-- DISCIPLINAS -->
+
+                    <div class="box">
+
+                        <div class="title">
+                            <h2>Quadro de aulas</h2>
+                            <a href="qda.html">Ver todas</a>
+                        </div>
+
+
+
+                        <div class="disciplina">
+
+                            <div class="info">
+
+                                <div class="icone">
+                                    <i class="fa-solid fa-code"></i>
+                                </div>
+
+                                <div>
+                                    <h3 class="algoritimos">Segunda • Algoritomos e programação</h3>
+                                    <small>Marcelo Duduchi Feitosa</small>
+                                </div>
+                            </div>
+
+
+                            <div class="acesso">
+
+                                <div class="tags">
+                                    <small class="sala">Mooca - Inovação Digital - H - Intermediário - I03h</small>
+
+                                    <small class="modalidade">Presencial</small>
+                                </div>
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </div>
+                        </div>
+
+                        <div class="disciplina">
+
+                            <div class="info">
+
+                                <div class="icone">
+                                    <i class="fa-solid fa-code"></i>
+                                </div>
+
+                                <div>
+                                    <h3 class="algoritimos">Terça • Algoritimos e programação</h3>
+                                    <small>Marcelo Amorim</small>
+                                </div>
+
+                            </div>
+
+                            <div class="acesso">
+                                <div class="tags">
+                                    <small class="sala">Mooca - Inovação Digital - H - 1 Andar - 101h</small>
+
+                                    <small class="modalidade">Presencial</small>
+                                </div>
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </div>
+                        </div>
+
+                        <div class="disciplina">
+
+                            <div class="info">
+
+                                <div class="icone">
+                                    <i class="fa-solid fa-users"></i>
+                                </div>
+
+                                <div>
+                                    <h3>Quinta • Interação Humano Computador e UX</h3>
+                                    <small>Jose Carmino Gomes Junior</small>
+
+                                </div>
+
+                            </div>
+
+                            <div class="acesso">
+                                <div class="tags">
+                                    <small class="sala">Mooca - Inovação Digital - H - Intermediário - I02h</small>
+
+                                    <small class="modalidade">Presencial</small>
+                                </div>
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </div>
+                        </div>
+
+                        <div class="disciplina">
+
+                            <div class="info">
+
+                                <div class="icone">
+                                    <i class="fa-solid fa-users"></i>
+                                </div>
+
+                                <div>
+                                    <h3>Sexta • Interação Humano Computador e UX</h3>
+                                    <small>Vitor Alex Oliveira Alves</small>
+                                </div>
+                            </div>
+
+                            <div class="acesso">
+                                <div class="tags">
+                                    <small class="sala">Mooca - Inovação Digital - H - Intermediário - I09</small>
+
+                                    <small class="modalidade">Presencial</small>
+                                </div>
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- AGENDA -->
+                    <div class="box">
+
+                        <div class="title">
+                            <h2>Agenda</h2>
+                            <a href="#">Ver calendário</a>
+                        </div>
+
+                        <div class="evento">
+                            <h3>8 JUN</h3>
+
+                            <div>
+                                <strong>Prova - IHC e UX</strong>
+                                <small>19:00 - 21:50</small>
+                            </div>
+                        </div>
+
+                        <div class="evento">
+                            <h3>17 JUN</h3>
+
+                            <div>
+                                <strong>Apresentação - A3 IHC</strong>
+                                <small>Sexta</small>
+                            </div>
+                        </div>
+
+                        <div class="evento">
+                            <h3>4 JUL</h3>
+
+                            <div>
+                                <strong>Entrega - Projeto IHC (A3)</strong>
+                                <small>Quinta</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- AVISOS -->
+                    <div class="box">
+
+                        <div class="title">
+                            <h2>Avisos</h2>
+                            <a href="#">Ver todos</a>
+                        </div>
+
+                        <div class="aviso">
+                            <h3>Rematrícula aberta</h3>
+
+                            <p>
+                                O período de rematrícula já está disponível.
+                            </p>
+                        </div>
+
+                        <div class="aviso">
+                            <h3>Manutenção no portal</h3>
+
+                            <p>
+                                O sistema ficará indisponível para melhorias.
+                            </p>
+                        </div>
+
+                        <div class="aviso">
+                            <h3>Semana universitária</h3>
+
+                            <p>
+                                Confira a programação completa.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="ucs-extra">
+
+                    <div class="title">
+                        <h2>Minhas UCs</h2>
+                        <a href="#">Ir para Minhas UCs</a>
+                    </div>
+
+                    <div class="uc-card">
+
+                        <div class="uc-img">
+                            <i class="fa-solid fa-laptop-code"></i>
+                        </div>
+
+                        <div class="uc-info">
+
+                            <h3>Academia de Futuro Profissionais</h3>
+
+                            <strong>ADS1AN-MCA2-873440</strong>
+
+                            <p>Análise e Desenvolvimento de Sistemas | Graduação (Teórica (digital))</p>
+
+                            <div class="barra">
+                                <div class="progresso"></div>
+                            </div>
+
+                            <small>70% concluído</small>
+
+                            <div class="uc-icons">
+
+                                <div>
+                                    <i class="fa-regular fa-file-lines"></i>
+                                    <span>Conteúdo</span>
+                                </div>
+
+                                <div>
+                                    <i class="fa-solid fa-paperclip"></i>
+                                    <span>Material</span>
+                                </div>
+
+                                <div>
+                                    <i class="fa-regular fa-clipboard"></i>
+                                    <span>Avaliações</span>
+                                </div>
+
+                                <div>
+                                    <i class="fa-solid fa-users"></i>
+                                    <span>Membros</span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uc-card">
+
+                        <div class="uc-img" style="background:linear-gradient(135deg,#2563eb,#3b82f6);">
+
+                            <i class="fa-solid fa-laptop-code"></i>
+
+                        </div>
+
+                        <div class="uc-info">
+
+                            <h3>Algoritimos e programação</h3>
+
+                            <strong>ADS1AN-MCA1-70509055</strong>
+
+                            <p>Análise e Desenvolvimento de Sistemas | Graduação (Prática (presencial))</p>
+
+                            <div class="barra">
+                                <div class="progresso" style="width:55%;"></div>
+                            </div>
+
+                            <small>55% concluído</small>
+
+                            <div class="uc-icons">
+
+                                <div>
+                                    <i class="fa-regular fa-file-lines"></i>
+                                    <span>Conteúdo</span>
+                                </div>
+
+                                <div>
+                                    <i class="fa-solid fa-paperclip"></i>
+                                    <span>Material</span>
+                                </div>
+
+                                <div>
+                                    <i class="fa-regular fa-clipboard"></i>
+                                    <span>Avaliações</span>
+                                </div>
+
+                                <div>
+                                    <i class="fa-solid fa-users"></i>
+                                    <span>Membros</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uc-card">
+
+                        <div class="uc-img" style="background:linear-gradient(135deg,#9b4388,#e072a9);">
+
+                            <i class="fa-solid fa-laptop-code"></i>
+
+                        </div>
+
+                        <div class="uc-info">
+
+                            <h3>Interação Humano Computador e UX</h3>
+
+                            <strong>ADS1AN-MCA2-77689904</strong>
+
+                            <p>Análise e Desenvolvimento de Sistemas | Graduação (Prática (presencial))</p>
+
+                            <div class="barra">
+                                <div class="progresso" style="width:37%;"></div>
+                            </div>
+
+                            <small>37% concluído</small>
+
+                            <div class="uc-icons">
+
+                                <div>
+                                    <i class="fa-regular fa-file-lines"></i>
+                                    <span>Conteúdo</span>
+                                </div>
+
+                                <div>
+                                    <i class="fa-solid fa-paperclip"></i>
+                                    <span>Material</span>
+                                </div>
+
+                                <div>
+                                    <i class="fa-regular fa-clipboard"></i>
+                                    <span>Avaliações</span>
+                                </div>
+
+                                <div>
+                                    <i class="fa-solid fa-users"></i>
+                                    <span>Membros</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+
+                <!-- RODAPÉ -->
+
+                <footer>
+                    © 2026 Portal Acadêmico.
+                </footer>
+            </main>
+        </div>
+        <script>
+
+            const menu = document.querySelector("#menu-btn");
+            const sidebar = document.querySelector(".sidebar");
+
+            menu.onclick = () => {
+                sidebar.classList.toggle("close");
+            }
+
+        </script>
+
+        <script>
+
+            const perfilBtn = document.querySelector(".perfil-btn");
+            const perfilMenu = document.querySelector(".perfil-menu");
+            const perfilContainer = document.querySelector(".perfil-container");
+
+            perfilBtn.addEventListener("click", function (event) {
+                perfilMenu.classList.toggle("active");
+                event.stopPropagation();
+            });
+
+            perfilMenu.addEventListener("click", function (event) {
+                event.stopPropagation();
+            });
+
+            document.addEventListener("click", function () {
+                perfilMenu.classList.remove("active");
+            });
+
+        </script>
+
+        <script>
+            const temaBtn = document.getElementById("tema-btn");
+            const temaIcon = document.getElementById("tema-icon");
+
+            temaBtn.addEventListener("click", () => {
+                document.body.classList.toggle("dark-mode");
+
+                if (document.body.classList.contains("dark-mode")) {
+                    temaIcon.classList.remove("fa-moon");
+                    temaIcon.classList.add("fa-sun");
+                    localStorage.setItem("tema", "dark");
+                } else {
+                    temaIcon.classList.remove("fa-sun");
+                    temaIcon.classList.add("fa-moon");
+                    localStorage.setItem("tema", "light");
+                }
+            });
+
+            if (localStorage.getItem("tema") === "dark") {
+                document.body.classList.add("dark-mode");
+                temaIcon.classList.remove("fa-moon");
+                temaIcon.classList.add("fa-sun");
+            }
+        </script>
+
+
+    </body>
+
+    </html>

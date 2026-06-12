@@ -1,0 +1,406 @@
+/*NOTAS — notas.css*/
+
+.nt-page-header {
+  margin-bottom: 25px;
+}
+
+.nt-page-header h1 {
+  font-size: 32px;
+  color: var(--text);
+}
+
+.nt-page-header p {
+  color: var(--text2);
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+/* CARDS DE RESUMO */
+
+.nt-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-bottom: 25px;
+}
+
+.nt-stat-card {
+  background: var(--card);
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+.nt-stat-card p {
+  font-size: 13px;
+  color: var(--text2);
+  margin-bottom: 8px;
+}
+
+.nt-stat-card span {
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--text);
+  display: block;
+  margin-bottom: 8px;
+}
+
+/* BADGES */
+
+.nt-badge {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.badge-green {
+  background: #d1fae5;
+  color: #065f46;
+}
+.badge-amber {
+  background: #fef3c7;
+  color: #92400e;
+}
+.badge-red {
+  background: #fee2e2;
+  color: #991b1b;
+}
+.badge-blue {
+  background: #dbeafe;
+  color: #1e40af;
+}
+
+/* GRID DE DISCIPLINAS */
+
+.nt-disc-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 25px;
+}
+
+.nt-disc-card {
+  background: var(--card);
+  border-radius: 25px;
+  padding: 22px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.nt-disc-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+}
+
+.nt-disc-top {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 16px;
+}
+
+.nt-disc-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.nt-disc-icon i {
+  font-size: 20px;
+}
+
+.nt-disc-icon.purple {
+  background: #ede9fe;
+}
+.nt-disc-icon.purple i {
+  color: #7c3aed;
+}
+
+.nt-disc-icon.pink {
+  background: #fae8ff;
+}
+.nt-disc-icon.pink i {
+  color: #9b4388;
+}
+
+.nt-disc-icon.blue {
+  background: #dbeafe;
+}
+.nt-disc-icon.blue i {
+  color: #2563eb;
+}
+
+.nt-disc-icon.teal {
+  background: #d1fae5;
+}
+.nt-disc-icon.teal i {
+  color: #0f6e56;
+}
+
+.nt-disc-nome h3 {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text);
+  margin-bottom: 3px;
+}
+
+.nt-disc-nome small {
+  font-size: 12px;
+  color: var(--text2);
+}
+
+.nt-nota-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 10px;
+}
+
+.nt-nota-grande {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.nt-barra {
+  width: 100%;
+  height: 6px;
+  background: var(--border);
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 14px;
+}
+
+.nt-prog {
+  height: 100%;
+  border-radius: 10px;
+}
+
+/* AVALIAÇÕES */
+
+.nt-avaliacoes {
+  border-top: 1px solid var(--border);
+  padding-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.nt-av-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nt-av-row span {
+  font-size: 13px;
+  color: var(--text2);
+}
+
+.nt-av-row strong {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.nota-ok {
+  color: #065f46;
+}
+.nota-warn {
+  color: #92400e;
+}
+.nota-bad {
+  color: #991b1b;
+}
+
+/* LINHA INFERIOR */
+
+.nt-row-bot {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+  margin-bottom: 25px;
+}
+
+.nt-box {
+  background: var(--card);
+  border-radius: 25px;
+  padding: 25px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+.nt-box-title {
+  margin-bottom: 18px;
+}
+
+.nt-box-title h2 {
+  font-size: 18px;
+  color: var(--text);
+}
+
+/* COMPARATIVO */
+
+.nt-comp-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.nt-comp-row:last-child {
+  border: none;
+}
+
+.nt-comp-info {
+  min-width: 160px;
+}
+
+.nt-comp-info h4 {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text);
+}
+
+.nt-comp-barra {
+  flex: 1;
+  height: 6px;
+  background: var(--border);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.nt-comp-prog {
+  height: 100%;
+  border-radius: 10px;
+}
+
+.nt-comp-nota {
+  font-size: 15px;
+  font-weight: 600;
+  min-width: 34px;
+  text-align: right;
+}
+
+/* HISTÓRICO */
+
+.nt-hist-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.nt-hist-row:last-child {
+  border: none;
+}
+
+.nt-hist-left h4 {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text);
+  margin-bottom: 3px;
+}
+
+.nt-hist-left small {
+  font-size: 12px;
+  color: var(--text2);
+}
+
+.nt-hist-right {
+  text-align: right;
+}
+
+.nt-hist-right span {
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--text);
+  display: block;
+}
+
+.nt-hist-right small {
+  font-size: 11px;
+  color: var(--text2);
+}
+
+/* DARK MODE */
+
+body.dark-mode .badge-green {
+  background: #064e3b;
+  color: #6ee7b7;
+}
+body.dark-mode .badge-amber {
+  background: #78350f;
+  color: #fcd34d;
+}
+body.dark-mode .badge-red {
+  background: #7f1d1d;
+  color: #fca5a5;
+}
+body.dark-mode .badge-blue {
+  background: #1e3a6e;
+  color: #93c5fd;
+}
+
+body.dark-mode .nt-disc-icon.purple {
+  background: #3b1f6e;
+}
+body.dark-mode .nt-disc-icon.pink {
+  background: #4a1a5e;
+}
+body.dark-mode .nt-disc-icon.blue {
+  background: #1e3a6e;
+}
+body.dark-mode .nt-disc-icon.teal {
+  background: #064e3b;
+}
+
+body.dark-mode .nota-ok {
+  color: #6ee7b7;
+}
+body.dark-mode .nota-warn {
+  color: #fcd34d;
+}
+body.dark-mode .nota-bad {
+  color: #fca5a5;
+}
+
+body.dark-mode .nt-disc-card:hover {
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* RESPONSIVO */
+
+@media (max-width: 1200px) {
+  .nt-stats {
+    grid-template-columns: 1fr 1fr;
+  }
+  .nt-disc-grid {
+    grid-template-columns: 1fr;
+  }
+  .nt-row-bot {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .nt-stats {
+    grid-template-columns: 1fr 1fr;
+  }
+  .nt-comp-info {
+    min-width: 100px;
+  }
+}
+
+@media (max-width: 500px) {
+  .nt-stats {
+    grid-template-columns: 1fr;
+  }
+}

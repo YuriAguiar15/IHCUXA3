@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quadro de Aulas — Ulife</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/qda.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="icon" type="image/png" href="image/ulifeicon.png">
+</head>
+
+<body>
+  <div class="container">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <div class="logo">
+        <h1>U<span>life</span></h1>
+      </div>
+
+      <nav>
+        <ul>
+          <li onclick="window.location.href='index.html'">
+            <i class="fa-solid fa-house"></i>
+            <span>Início</span>
+          </li>
+
+          <li class="active" onclick="window.location.href='academico.html'">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <span>Acadêmico</span>
+          </li>
+
+          <li onclick="window.location.href='financeiro.html'">
+            <i class="fa-solid fa-wallet"></i>
+            <span>Financeiro</span>
+          </li>
+
+          <li onclick="window.location.href='atividades.html'">
+            <i class="fa-solid fa-calendar-days"></i>
+            <span>Atividades</span>
+          </li>
+
+          <li>
+            <i class="fa-solid fa-book-open"></i>
+            <span>Biblioteca</span>
+          </li>
+
+          <li>
+            <i class="fa-solid fa-table-cells"></i>
+            <span>Serviços</span>
+          </li>
+
+          <li>
+            <i class="fa-solid fa-headset"></i>
+            <span>Suporte</span>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="logout">
+        <i class="fa-solid fa-arrow-right-from-bracket"></i>
+        <span>Sair</span>
+      </div>
+    </aside>
+
+    <!-- CONTEÚDO -->
+    <main>
+
+      <!-- TOPO -->
+      <header>
+        <div class="menu">
+          <i id="menu-btn" class="fa-solid fa-bars"></i>
+        </div>
+
+        <div class="icons">
+          <i class="fa-regular fa-bell"></i>
+
+          <div class="perfil-container">
+            <div class="perfil-btn">
+              <i class="fa-regular fa-user"></i>
+            </div>
+
+            <div class="perfil-menu">
+              <div class="perfil-topo">
+                <div class="foto">
+                  <i class="fa-solid fa-user"></i>
+                </div>
+                <h3>João</h3>
+                <small>Sem foto de perfil</small>
+              </div>
+
+              <ul>
+                <li><i class="fa-regular fa-address-card"></i> Meus dados</li>
+                <li><i class="fa-regular fa-folder"></i> Meus documentos</li>
+                <li><i class="fa-solid fa-wallet"></i> Meus pagamentos</li>
+                <li><i class="fa-solid fa-graduation-cap"></i> Políticas de bolsas</li>
+                <li><i class="fa-regular fa-bell"></i> Configurar notificações</li>
+                <li><i class="fa-regular fa-circle-question"></i> Ajuda</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="tema-btn" id="tema-btn">
+            <i id="tema-icon" class="fa-solid fa-moon"></i>
+          </div>
+        </div>
+      </header>
+
+      <!-- TÍTULO -->
+      <section class="page-header">
+        <h1>Quadro de aulas</h1>
+        <p>Semestre 1 — 2026 · ADS Manhã</p>
+      </section>
+
+      <!-- TABS -->
+      <div class="qa-tabs">
+        <div class="qa-tab active" data-tab="quadro">Quadro de aulas</div>
+        <div class="qa-tab" data-tab="gravadas">Aulas gravadas</div>
+        <div class="qa-tab" data-tab="ucs">Minhas UCs</div>
+        <div class="qa-tab" data-tab="atividades">Atividades avaliativas</div>
+      </div>
+
+      <!-- CONTEÚDO DAS TABELAS -->
+      <div class="qa-tab-content active" id="tab-quadro">
+
+        <!-- NAVEGAÇÃO DA SEMANA -->
+        <div class="semana-nav">
+          <div class="semana-mes">
+            <strong>Maio</strong> <span>2026</span>
+          </div>
+
+          <div class="semana-controles">
+            <button class="nav-btn" id="semana-anterior">
+              <i class="fa-solid fa-chevron-left"></i>
+            </button>
+
+            <span class="semana-label" id="semana-label">Semana 26 – 31</span>
+
+            <button class="nav-btn" id="semana-proxima">
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+
+            <button class="hoje-btn" id="btn-hoje">Exibir hoje</button>
+          </div>
+        </div>
+
+        <!-- GRADE SEMANAL -->
+        <div class="qa-grade">
+
+          <!-- SEGUNDA -->
+          <div class="qa-dia">
+            <div class="qa-dia-header">
+              <span class="dia-nome">SEG</span>
+              <span class="dia-num">25</span>
+            </div>
+
+            <div class="qa-aula purple">
+              <div class="aula-barra" style="background: #7c3aed;"></div>
+              <span class="aula-tipo">Presencial</span>
+              <strong class="aula-horario">19h00 – 21h50</strong>
+              <p class="aula-nome">Algoritmos e programação</p>
+              <small class="aula-sala">Mooca · Inovação Digital · I03h</small>
+              <small class="aula-prof">Marcelo Duduchi Feitosa</small>
+            </div>
+          </div>
+
+          <!-- TERÇA -->
+          <div class="qa-dia">
+            <div class="qa-dia-header">
+              <span class="dia-nome">TER</span>
+              <span class="dia-num">26</span>
+            </div>
+
+            <div class="qa-aula blue">
+              <div class="aula-barra" style="background: #2563eb;"></div>
+              <span class="aula-tipo">Presencial</span>
+              <strong class="aula-horario">19h00 – 21h50</strong>
+              <p class="aula-nome">Algoritmos e programação</p>
+              <small class="aula-sala">Mooca · Inovação Digital · 101h</small>
+              <small class="aula-prof">Marcelo Amorim</small>
+            </div>
+          </div>
+
+          <!-- QUARTA -->
+          <div class="qa-dia">
+            <div class="qa-dia-header">
+              <span class="dia-nome">QUA</span>
+              <span class="dia-num">27</span>
+            </div>
+
+            <div class="qa-aula teal">
+              <div class="aula-barra" style="background: #0f6e56;"></div>
+              <span class="aula-tipo">Digital</span>
+              <strong class="aula-horario">19h00 – 20h40</strong>
+              <p class="aula-nome">Academia de Futuros Profissionais</p>
+              <small class="aula-sala">Digital</small>
+              <small class="aula-prof">Professor a definir</small>
+            </div>
+          </div>
+
+          <!-- QUINTA (hoje) -->
+          <div class="qa-dia">
+            <div class="qa-dia-header">
+              <span class="dia-nome">QUI</span>
+              <span class="dia-num">28</span>
+            </div>
+
+            <div class="qa-aula pink hoje-card">
+              <div class="aula-barra" style="background: #9b4388;"></div>
+              <span class="aula-tipo">Presencial</span>
+              <strong class="aula-horario">19h00 – 21h50</strong>
+              <p class="aula-nome">Interação Humano Computador e UX</p>
+              <small class="aula-sala">Mooca · Inovação Digital · I02h</small>
+              <small class="aula-prof">Jose Carmino Gomes Junior</small>
+            </div>
+          </div>
+
+          <!-- SEXTA -->
+          <div class="qa-dia">
+            <div class="qa-dia-header">
+              <span class="dia-nome">SEX</span>
+              <span class="dia-num">29</span>
+            </div>
+
+            <div class="qa-aula pink">
+              <div class="aula-barra" style="background: #9b4388;"></div>
+              <span class="aula-tipo">Presencial</span>
+              <strong class="aula-horario">19h00 – 21h50</strong>
+              <p class="aula-nome">Interação Humano Computador e UX</p>
+              <small class="aula-sala">Mooca · Inovação Digital · I09h</small>
+              <small class="aula-prof">Vitor Alex Oliveira Alves</small>
+            </div>
+          </div>
+
+          <!-- SÁBADO -->
+          <div class="qa-dia">
+            <div class="qa-dia-header">
+              <span class="dia-nome">SÁB</span>
+              <span class="dia-num">30</span>
+            </div>
+
+            <div class="qa-vazio">
+              <i class="fa-regular fa-calendar-xmark"></i>
+              <p>Sem aula</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- COMPONENTES CURRICULARES -->
+        <div class="qa-ucs">
+          <p class="qa-ucs-title">Meus componentes curriculares:</p>
+
+          <div class="qa-uc-row">
+            <div class="uc-dot" style="background: #0f6e56;"></div>
+            <div class="uc-info">
+              <h3>Academia de Futuros Profissionais</h3>
+              <small>ADS1AN-MCA2-873440 · Teórica digital</small>
+            </div>
+            <div class="uc-barra">
+              <div class="uc-prog" style="width: 70%; background: #0f6e56;"></div>
+            </div>
+            <span class="uc-pct">70%</span>
+          </div>
+
+          <hr class="qa-sep">
+
+          <div class="qa-uc-row">
+            <div class="uc-dot" style="background: #7c3aed;"></div>
+            <div class="uc-info">
+              <h3>Algoritmos e programação</h3>
+              <small>ADS1AN-MCA1-70509055 · Prática presencial</small>
+            </div>
+            <div class="uc-barra">
+              <div class="uc-prog" style="width: 55%; background: #7c3aed;"></div>
+            </div>
+            <span class="uc-pct">55%</span>
+          </div>
+
+          <hr class="qa-sep">
+
+          <div class="qa-uc-row">
+            <div class="uc-dot" style="background: #9b4388;"></div>
+            <div class="uc-info">
+              <h3>Interação Humano Computador e UX</h3>
+              <small>ADS1AN-MCA2-77689904 · Prática presencial</small>
+            </div>
+            <div class="uc-barra">
+              <div class="uc-prog" style="width: 37%; background: #9b4388;"></div>
+            </div>
+            <span class="uc-pct">37%</span>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- TABELA AULAS GRAVADAS -->
+      <div class="qa-tab-content" id="tab-gravadas">
+        <div class="qa-vazio-tab">
+          <i class="fa-solid fa-video"></i>
+          <h3>Nenhuma aula gravada disponível</h3>
+          <p>As gravações aparecerão aqui quando forem disponibilizadas.</p>
+        </div>
+      </div>
+
+      <!-- TABELA MINHAS UCS -->
+      <div class="qa-tab-content" id="tab-ucs">
+        <div class="qa-vazio-tab">
+          <i class="fa-solid fa-book-open"></i>
+          <h3>Acesse suas UCs pelo Acadêmico</h3>
+          <p>Veja conteúdos, materiais e avaliações de cada UC.</p>
+        </div>
+      </div>
+
+      <!-- TABELA ATIVIDADES -->
+      <div class="qa-tab-content" id="tab-atividades">
+        <div class="qa-vazio-tab">
+          <i class="fa-regular fa-clipboard"></i>
+          <h3>Nenhuma atividade avaliativa no momento</h3>
+          <p>As atividades pendentes aparecerão aqui.</p>
+        </div>
+      </div>
+
+      <footer>© 2026 Portal Acadêmico.</footer>
+
+    </main>
+  </div>
+
+  <!-- SCRIPTS -->
+  <script>
+    const menu = document.querySelector("#menu-btn");
+    const sidebar = document.querySelector(".sidebar");
+    menu.onclick = () => sidebar.classList.toggle("close");
+  </script>
+
+  <script>
+    const perfilBtn = document.querySelector(".perfil-btn");
+    const perfilMenu = document.querySelector(".perfil-menu");
+    perfilBtn.addEventListener("click", e => { perfilMenu.classList.toggle("active"); e.stopPropagation(); });
+    perfilMenu.addEventListener("click", e => e.stopPropagation());
+    document.addEventListener("click", () => perfilMenu.classList.remove("active"));
+  </script>
+
+  <script>
+    const temaBtn = document.getElementById("tema-btn");
+    const temaIcon = document.getElementById("tema-icon");
+
+    if (localStorage.getItem("tema") === "dark") {
+      document.body.classList.add("dark-mode");
+      temaIcon.classList.replace("fa-moon", "fa-sun");
+    }
+    temaBtn.addEventListener("click", () => {
+      document.body.classList.toggle("dark-mode");
+
+      if (document.body.classList.contains("dark-mode")) {
+        temaIcon.classList.replace("fa-moon", "fa-sun");
+        localStorage.setItem("tema", "dark");
+
+      } else {
+        temaIcon.classList.replace("fa-sun", "fa-moon");
+        localStorage.setItem("tema", "light");
+      }
+    });
+  </script>
+
+  <script>
+    /* TABS */
+    const tabs = document.querySelectorAll(".qa-tab");
+    const contents = document.querySelectorAll(".qa-tab-content");
+
+    tabs.forEach(tab => {
+      tab.addEventListener("click", () => {
+        tabs.forEach(t => t.classList.remove("active"));
+        contents.forEach(c => c.classList.remove("active"));
+        tab.classList.add("active");
+        document.getElementById("tab-" + tab.dataset.tab).classList.add("active");
+      });
+    });
+  </script>
+
+  <script>
+    /* NAVEGAÇÃO DE SEMANA */
+    const semanas = [
+      { label: "Semana 1 - 7", dias: [1, 2, 3, 4, 5, 6, 7] },
+      { label: "Semana 8 - 13", dias: [8, 9, 10, 11, 12, 13] },
+      { label: "Semana 14 - 19", dias: [14, 15, 16, 17, 18, 19] },
+      { label: "Semana 20 - 25", dias: [20, 21, 22, 23, 24, 25] },
+      { label: "Semana 26 - 31", dias: [26, 27, 28, 29, 30, 31] },
+    ];
+
+    let semanaAtual = 4;
+
+    const semanaLabel = document.getElementById("semana-label");
+    const diasNum = document.querySelectorAll(".dia-num");
+
+    function atualizarSemana() {
+      const s = semanas[semanaAtual];
+      semanaLabel.textContent = s.label;
+      diasNum.forEach((el, i) => { el.textContent = s.dias[i]; });
+    }
+
+    document.getElementById("semana-anterior").onclick = () => {
+      if (semanaAtual > 0) { semanaAtual--; atualizarSemana(); }
+    };
+
+    document.getElementById("semana-proxima").onclick = () => {
+      if (semanaAtual < semanas.length - 1) { semanaAtual++; atualizarSemana(); }
+    };
+
+    document.getElementById("btn-hoje").onclick = () => {
+      semanaAtual = 4;
+      atualizarSemana();
+    };
+  </script>
+
+</body>
+
+</html>

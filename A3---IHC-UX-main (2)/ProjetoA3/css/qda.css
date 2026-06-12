@@ -1,0 +1,463 @@
+/* PAGINA QUADRO DE AULAS — */
+
+/* TÍTULO DA PÁGINA */
+
+.page-header {
+  margin-bottom: 5px;
+}
+
+.page-header h1 {
+  font-size: 32px;
+  color: var(--text);
+}
+
+.page-header p {
+  color: var(--text2);
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+/* TABS */
+
+.qa-tabs {
+  display: flex;
+  border-bottom: 1.5px solid var(--border);
+  margin-bottom: 20px;
+}
+
+.qa-tab {
+  padding: 12px 20px;
+  font-size: 14px;
+  color: var(--text2);
+  cursor: pointer;
+  border-bottom: 2.5px solid transparent;
+  margin-bottom: -1.5px;
+  transition: 0.2s;
+}
+
+.qa-tab:hover {
+  color: var(--purple);
+}
+
+.qa-tab.active {
+  color: var(--purple);
+  border-bottom-color: var(--purple);
+  font-weight: 600;
+}
+
+/* CONTEÚDO DAS TABS */
+
+.qa-tab-content {
+  display: none;
+}
+
+.qa-tab-content.active {
+  display: block;
+}
+
+/* ESTADO VAZIO DAS TABS */
+
+.qa-vazio-tab {
+  text-align: center;
+  padding: 60px 20px;
+  color: var(--text2);
+}
+
+.qa-vazio-tab i {
+  font-size: 48px;
+  color: var(--purple);
+  opacity: 0.4;
+  display: block;
+  margin-bottom: 16px;
+}
+
+.qa-vazio-tab h3 {
+  font-size: 18px;
+  color: var(--text);
+  margin-bottom: 8px;
+}
+
+.qa-vazio-tab p {
+  font-size: 14px;
+  color: var(--text2);
+}
+
+/* NAVEGAÇÃO DA SEMANA */
+
+.semana-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--card);
+  border-radius: 16px;
+  border: 1px solid var(--border);
+  padding: 14px 20px;
+  margin-bottom: 20px;
+}
+
+.semana-mes {
+  font-size: 16px;
+  color: var(--text);
+}
+
+.semana-mes strong {
+  font-weight: 600;
+  color: var(--text);
+}
+
+.semana-mes span {
+  color: var(--purple);
+  font-weight: 500;
+}
+
+.semana-controles {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-btn {
+  width: 32px;
+  height: 32px;
+  border-radius: 10px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.2s;
+  color: var(--text2);
+}
+
+.nav-btn:hover {
+  background: var(--hover);
+  color: var(--purple);
+}
+
+.semana-label {
+  font-size: 13px;
+  color: var(--purple);
+  font-weight: 500;
+  padding: 5px 14px;
+  background: var(--hover);
+  border-radius: 20px;
+}
+
+.hoje-btn {
+  font-size: 13px;
+  color: var(--text2);
+  padding: 6px 14px;
+  border-radius: 10px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  cursor: pointer;
+  transition: 0.2s;
+  font-family: "Poppins", sans-serif;
+}
+
+.hoje-btn:hover {
+  background: var(--hover);
+  color: var(--purple);
+}
+
+/* GRADE SEMANAL */
+
+.qa-grade {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+.qa-dia {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* CABEÇALHO DO DIA */
+
+.qa-dia-header {
+  text-align: center;
+  padding: 10px 6px;
+  border-radius: 12px;
+}
+
+.qa-dia-header .dia-nome {
+  display: block;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text2);
+  letter-spacing: 0.5px;
+  margin-bottom: 4px;
+}
+
+.qa-dia-header .dia-num {
+  display: block;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--text);
+  line-height: 1.1;
+}
+
+.qa-dia-header.hoje {
+  background: var(--hover);
+}
+
+.qa-dia-header.hoje .dia-nome {
+  color: #6d28d9;
+}
+
+.qa-dia-header.hoje .dia-num {
+  color: var(--purple);
+}
+
+/* CARD DE AULA */
+
+.qa-aula {
+  background: var(--card);
+  border-radius: 16px;
+  border: 1px solid var(--border);
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.qa-aula:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.qa-aula.hoje-card {
+  border-color: var(--purple);
+  border-width: 1.5px;
+}
+
+.aula-barra {
+  height: 3px;
+  border-radius: 2px;
+  margin-bottom: 4px;
+}
+
+.aula-tipo {
+  font-size: 11px;
+  color: var(--text2);
+  font-weight: 500;
+}
+
+.aula-horario {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text);
+  display: block;
+}
+
+.aula-nome {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--purple);
+  line-height: 1.4;
+}
+
+.aula-sala {
+  display: block;
+  font-size: 11px;
+  color: var(--text2);
+  line-height: 1.4;
+  border-top: 1px solid var(--border);
+  padding-top: 6px;
+  margin-top: 2px;
+}
+
+.aula-prof {
+  display: block;
+  font-size: 11px;
+  color: var(--text2);
+}
+
+/* CORES DOS CARDS */
+
+.qa-aula.purple {
+  border-left: 3px solid #7c3aed;
+}
+.qa-aula.blue {
+  border-left: 3px solid #2563eb;
+}
+.qa-aula.pink {
+  border-left: 3px solid #9b4388;
+}
+.qa-aula.teal {
+  border-left: 3px solid #0f6e56;
+}
+
+/* CARD VAZIO */
+
+.qa-vazio {
+  background: var(--bg);
+  border-radius: 16px;
+  border: 1.5px dashed var(--border);
+  padding: 24px 12px;
+  text-align: center;
+}
+
+.qa-vazio i {
+  font-size: 24px;
+  color: var(--text2);
+  opacity: 0.4;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.qa-vazio p {
+  font-size: 11px;
+  color: var(--text2);
+  opacity: 0.6;
+}
+
+/* COMPONENTES CURRICULARES */
+
+.qa-ucs {
+  background: var(--card);
+  border-radius: 20px;
+  padding: 22px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  margin-bottom: 25px;
+}
+
+.qa-ucs-title {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text2);
+  margin-bottom: 16px;
+}
+
+.qa-uc-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 10px 8px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.qa-uc-row:hover {
+  background: var(--hover);
+}
+
+.uc-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.uc-info {
+  flex: 1;
+}
+
+.uc-info h3 {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text);
+  margin-bottom: 2px;
+}
+
+.uc-info small {
+  font-size: 12px;
+  color: var(--text2);
+}
+
+.uc-barra {
+  width: 100px;
+  height: 5px;
+  background: var(--border);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.uc-prog {
+  height: 100%;
+  border-radius: 10px;
+}
+
+.uc-pct {
+  font-size: 12px;
+  color: var(--text2);
+  min-width: 34px;
+  text-align: right;
+}
+
+.qa-sep {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 4px 0;
+}
+
+/* DARK MODE */
+
+body.dark-mode .qa-aula {
+  border-color: var(--border);
+}
+
+body.dark-mode .qa-aula:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-mode .nav-btn {
+  background: var(--card);
+  border-color: var(--border);
+  color: var(--text2);
+}
+
+body.dark-mode .hoje-btn {
+  background: var(--card);
+  border-color: var(--border);
+}
+
+body.dark-mode .qa-ucs {
+  background: var(--card);
+}
+
+body.dark-mode .qa-vazio {
+  background: var(--card);
+}
+
+body.dark-mode .qa-dia-header.hoje {
+  background: var(--hover);
+}
+
+/* RESPONSIVO */
+
+@media (max-width: 1100px) {
+  .qa-grade {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .qa-grade {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .semana-nav {
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start;
+  }
+
+  .qa-tabs {
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 500px) {
+  .qa-grade {
+    grid-template-columns: 1fr;
+  }
+}

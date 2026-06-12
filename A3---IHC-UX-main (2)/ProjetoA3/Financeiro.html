@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Financeiro</title>
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/financeiro.css/">
+  <link rel="icon" type="image/png" href="image/ulifeicon.png">
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/Financeiro.css" />
+</head>
+
+<body>
+  <div class="container">
+
+    <aside class="sidebar">
+      <div class="logo">
+        <a href="index.html">
+          <h1>U<span>life</span></h1>
+        </a>
+      </div>
+
+      <ul>
+        <li onclick="window.location.href='index.html'">
+          <i class="fa-solid fa-house"></i>
+          <span>Início</span>
+        </li>
+
+        <li onclick="window.location.href='academico.html'"">
+      <i class=" fa-solid fa-graduation-cap"></i>
+          <span>Acadêmico</span>
+        </li>
+
+        <li class="active">
+          <i class="fa-solid fa-wallet"></i>
+          <span>Financeiro</span>
+        </li>
+
+        <li onclick="window.location.href='atividades.html'">
+          <i class="fa-solid fa-calendar-days"></i>
+          <span>Atividades</span>
+        </li>
+
+        <li>
+          <i class="fa-solid fa-book-open"></i>
+          <span>Biblioteca</span>
+        </li>
+
+        <li>
+          <i class="fa-solid fa-table-cells-large"></i>
+          <span>Serviços</span>
+        </li>
+
+        <li>
+          <i class="fa-solid fa-headset"></i>
+          <span>Suporte</span>
+        </li>
+      </ul>
+
+      <div class="logout">
+        <i class="fa-solid fa-right-from-bracket"></i>
+        <span>Sair</span>
+      </div>
+    </aside>
+
+    <main class="financeiro">
+
+      <header>
+        <div class="menu">
+          <i class="fa-solid fa-bars" id="menu-btn"></i>
+        </div>
+
+        <div class="icons">
+          <i class="fa-regular fa-bell"></i>
+
+          <div class="perfil-container">
+            <div class="perfil-btn" id="perfil-btn">
+              <i class="fa-regular fa-user"></i>
+            </div>
+
+            <div class="perfil-menu" id="perfil-menu">
+              <div class="perfil-topo">
+                <div class="foto">
+                  <i class="fa-solid fa-user"></i>
+                </div>
+
+                <h3>João</h3>
+                <small>Sem foto de perfil</small>
+              </div>
+
+              <ul>
+                <li>
+                  <i class="fa-regular fa-id-card"></i>
+                  Meus dados
+                </li>
+
+                <li>
+                  <i class="fa-regular fa-folder"></i>
+                  Meus documentos
+                </li>
+
+                <li>
+                  <i class="fa-solid fa-wallet"></i>
+                  Meus pagamentos
+                </li>
+
+                <li>
+                  <i class="fa-solid fa-graduation-cap"></i>
+                  Políticas de bolsas
+                </li>
+
+                <li>
+                  <i class="fa-regular fa-bell"></i>
+                  Configurar notificações
+                </li>
+
+                <li>
+                  <i class="fa-regular fa-circle-question"></i>
+                  Ajuda
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="tema-btn" id="tema-btn">
+            <i class="fa-solid fa-moon" id="tema-icon"></i>
+          </div>
+        </div>
+      </header>
+
+      <section class="financeiro-topo">
+        <div>
+          <h1>Financeiro</h1>
+          <p>Análise e Desenvolvimento de Sistemas - Turno: Noite | Campus: Mooca</p>
+        </div>
+
+        <div class="filtro-topo">
+          <label for="status">Status</label>
+          <select id="status">
+            <option>Aberto</option>
+            <option>Pago</option>
+            <option>Vencido</option>
+            <option>Todos</option>
+          </select>
+        </div>
+      </section>
+
+      <section class="cards-resumo">
+
+        <div class="resumo-card card-roxo">
+          <div class="resumo-icone">
+            <i class="fa-solid fa-wallet"></i>
+          </div>
+
+          <div>
+            <small>Total em aberto</small>
+            <h2>R$ 1.419,00</h2>
+            <span>Pagamento pendente</span>
+          </div>
+        </div>
+
+        <div class="resumo-card card-laranja">
+          <div class="resumo-icone">
+            <i class="fa-regular fa-calendar-days"></i>
+          </div>
+
+          <div>
+            <small>Vencimento</small>
+            <h2>08/07/2026</h2>
+            <span>Fique atento ao prazo</span>
+          </div>
+        </div>
+
+        <div class="resumo-card card-verde">
+          <div class="resumo-icone">
+            <i class="fa-solid fa-check"></i>
+          </div>
+
+          <div>
+            <small>Situação</small>
+            <h2>Regular</h2>
+            <span>Matrícula ativa</span>
+          </div>
+        </div>
+
+        <div class="resumo-card card-azul">
+          <div class="resumo-icone">
+            <i class="fa-regular fa-file-lines"></i>
+          </div>
+
+          <div>
+            <small>Documento</small>
+            <h2>NF-e</h2>
+            <span>Disponível para consulta</span>
+          </div>
+        </div>
+
+      </section>
+
+      <section class="financeiro-grid">
+
+        <div class="coluna-principal">
+
+          <section class="box-financeiro">
+            <div class="titulo-box">
+              <div>
+                <h2>Mensalidade em aberto</h2>
+                <p>Confira os dados da cobrança selecionada.</p>
+              </div>
+
+              <strong>Julho/2026</strong>
+            </div>
+
+            <div class="cobranca-card">
+              <div class="cobranca-topo">
+                <div>
+                  <h3>Rematrícula JUL/2026</h3>
+                  <p>Análise e Desenvolvimento de Sistemas</p>
+                </div>
+
+                <span class="status-aberto">Aberto</span>
+              </div>
+
+              <div class="dados-cobranca">
+
+                <div class="dado-card roxo-claro">
+                  <i class="fa-solid fa-graduation-cap"></i>
+                  <small>Curso</small>
+                  <strong>ADS</strong>
+                </div>
+
+                <div class="dado-card laranja-claro">
+                  <i class="fa-regular fa-calendar"></i>
+                  <small>Vencimento</small>
+                  <strong>08/07/2026</strong>
+                </div>
+
+                <div class="dado-card verde-claro">
+                  <i class="fa-solid fa-receipt"></i>
+                  <small>Parcela</small>
+                  <strong>Única</strong>
+                </div>
+
+                <div class="dado-card azul-claro">
+                  <i class="fa-solid fa-money-bill-wave"></i>
+                  <small>Valor</small>
+                  <strong>R$ 1.419,00</strong>
+                </div>
+
+              </div>
+
+              <div class="acoes-cobranca">
+                <button class="btn-secundario">
+                  <i class="fa-regular fa-file-lines"></i>
+                  Ver NF-e
+                </button>
+
+                <button class="btn-secundario">
+                  <i class="fa-solid fa-circle-info"></i>
+                  Detalhes
+                </button>
+
+                <button class="btn-principal">
+                  <i class="fa-solid fa-credit-card"></i>
+                  Pagar agora
+                </button>
+              </div>
+            </div>
+          </section>
+
+          <section class="box-financeiro">
+            <div class="titulo-box">
+              <div>
+                <h2>Meios de pagamento</h2>
+                <p>Escolha a forma de pagamento desejada.</p>
+              </div>
+            </div>
+
+            <div class="pagamento-grid">
+
+              <div class="pagamento-card pagamento-roxo selecionado">
+                <i class="fa-solid fa-barcode"></i>
+                <h3>Boleto</h3>
+                <p>Compensação em até 3 dias úteis.</p>
+                <span>Selecionado</span>
+              </div>
+
+              <div class="pagamento-card pagamento-verde">
+                <i class="fa-brands fa-pix"></i>
+                <h3>Pix</h3>
+                <p>Pagamento rápido e prático.</p>
+              </div>
+
+              <div class="pagamento-card pagamento-azul">
+                <i class="fa-regular fa-credit-card"></i>
+                <h3>Cartão</h3>
+                <p>Consulte as condições disponíveis.</p>
+              </div>
+
+            </div>
+          </section>
+
+        </div>
+
+        <aside class="coluna-lateral">
+
+          <section class="box-lateral">
+            <div class="lateral-titulo">
+              <div class="icone-lateral roxo">
+                <i class="fa-solid fa-file-contract"></i>
+              </div>
+
+              <div>
+                <h2>Imposto de renda</h2>
+                <p>Gere sua declaração anual.</p>
+              </div>
+            </div>
+
+            <label for="ano">Selecione o ano</label>
+
+            <div class="ir-controle">
+              <select id="ano">
+                <option>2026</option>
+                <option>2025</option>
+                <option>2024</option>
+              </select>
+
+              <button disabled>Gerar</button>
+            </div>
+
+            <div class="estado-vazio">
+              <i class="fa-regular fa-folder-open"></i>
+              <p>Não existem pagamentos para o ano selecionado.</p>
+            </div>
+          </section>
+
+          <section class="box-lateral aviso-boleto">
+            <div class="lateral-titulo">
+              <div class="icone-lateral laranja">
+                <i class="fa-solid fa-circle-info"></i>
+              </div>
+
+              <div>
+                <h2>Boletos</h2>
+                <p>Disponibilidade</p>
+              </div>
+            </div>
+
+            <p>
+              Os boletos de mensalidade ficam disponíveis entre os dias
+              <strong>25 e 30</strong> do mês anterior ao vencimento.
+            </p>
+          </section>
+
+          <section class="box-lateral">
+            <div class="lateral-titulo">
+              <div class="icone-lateral vermelho">
+                <i class="fa-solid fa-handshake"></i>
+              </div>
+
+              <div>
+                <h2>Portal Recupera</h2>
+                <p>Negociação online</p>
+              </div>
+            </div>
+
+            <p class="texto-lateral">
+              Caso tenha valores vencidos ou em aberto, negocie pelo portal de autoatendimento.
+            </p>
+
+            <button class="btn-principal btn-cheio">
+              Negociar agora
+            </button>
+          </section>
+
+        </aside>
+
+      </section>
+
+    </main>
+  </div>
+
+  <script>
+    const menuBtn = document.getElementById("menu-btn");
+    const sidebar = document.querySelector(".sidebar");
+
+    const temaBtn = document.getElementById("tema-btn");
+    const temaIcon = document.getElementById("tema-icon");
+
+    const perfilBtn = document.getElementById("perfil-btn");
+    const perfilMenu = document.getElementById("perfil-menu");
+
+    menuBtn.addEventListener("click", () => {
+      sidebar.classList.toggle("close");
+    });
+
+    temaBtn.addEventListener("click", () => {
+      document.body.classList.toggle("dark-mode");
+
+      if (document.body.classList.contains("dark-mode")) {
+        temaIcon.classList.remove("fa-moon");
+        temaIcon.classList.add("fa-sun");
+        localStorage.setItem("tema", "dark");
+      } else {
+        temaIcon.classList.remove("fa-sun");
+        temaIcon.classList.add("fa-moon");
+        localStorage.setItem("tema", "light");
+      }
+    });
+
+    perfilBtn.addEventListener("click", (event) => {
+      event.stopPropagation();
+      perfilMenu.classList.toggle("active");
+    });
+
+    document.addEventListener("click", (event) => {
+      if (!perfilMenu.contains(event.target) && !perfilBtn.contains(event.target)) {
+        perfilMenu.classList.remove("active");
+      }
+    });
+
+    if (localStorage.getItem("tema") === "dark") {
+      document.body.classList.add("dark-mode");
+      temaIcon.classList.remove("fa-moon");
+      temaIcon.classList.add("fa-sun");
+    }
+  </script>
+</body>
+
+</html>

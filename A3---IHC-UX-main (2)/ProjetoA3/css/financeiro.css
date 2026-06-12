@@ -1,0 +1,631 @@
+.financeiro {
+  width: 100%;
+}
+
+.financeiro-topo {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 25px;
+  margin-bottom: 30px;
+}
+
+.financeiro-topo h1 {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.financeiro-topo p {
+  color: var(--text2);
+  font-size: 17px;
+}
+
+.filtro-topo {
+  min-width: 260px;
+}
+
+.filtro-topo label,
+.box-lateral label {
+  display: block;
+  font-size: 14px;
+  color: var(--text2);
+  margin-bottom: 8px;
+}
+
+.filtro-topo select,
+.ir-controle select {
+  width: 100%;
+  height: 52px;
+  border: 1px solid var(--border);
+  border-radius: 15px;
+  padding: 0 16px;
+  background: var(--card);
+  color: var(--text);
+  font-size: 15px;
+  outline: none;
+}
+
+.filtro-topo select:focus,
+.ir-controle select:focus {
+  border-color: var(--purple);
+  box-shadow: 0 0 0 4px rgba(124, 58, 237, 0.12);
+}
+
+/* CARDS DE RESUMO */
+
+.cards-resumo {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+  margin-bottom: 30px;
+}
+
+.resumo-card {
+  border-radius: 26px;
+  padding: 25px;
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+  min-height: 165px;
+  transition: 0.3s;
+  border: 1px solid transparent;
+}
+
+.resumo-card:hover {
+  transform: translateY(-5px);
+}
+
+.resumo-icone {
+  width: 55px;
+  height: 55px;
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 23px;
+  flex-shrink: 0;
+}
+
+.resumo-card small {
+  display: block;
+  color: inherit;
+  opacity: 0.75;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.resumo-card h2 {
+  color: inherit;
+  font-size: 27px;
+  margin-bottom: 13px;
+}
+
+.resumo-card span {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.65);
+  color: inherit;
+  padding: 7px 13px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.card-roxo {
+  background: #f5f3ff;
+  color: #7c3aed;
+  border-color: #ddd6fe;
+}
+
+.card-roxo .resumo-icone {
+  background: #ede9fe;
+}
+
+.card-laranja {
+  background: #fff7ed;
+  color: #ea580c;
+  border-color: #fed7aa;
+}
+
+.card-laranja .resumo-icone {
+  background: #ffedd5;
+}
+
+.card-verde {
+  background: #ecfdf5;
+  color: #059669;
+  border-color: #bbf7d0;
+}
+
+.card-verde .resumo-icone {
+  background: #d1fae5;
+}
+
+.card-azul {
+  background: #eff6ff;
+  color: #2563eb;
+  border-color: #bfdbfe;
+}
+
+.card-azul .resumo-icone {
+  background: #dbeafe;
+}
+
+/* LAYOUT PRINCIPAL */
+
+.financeiro-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.6fr) minmax(340px, 0.8fr);
+  gap: 26px;
+}
+
+.coluna-principal,
+.coluna-lateral {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+
+.box-financeiro,
+.box-lateral {
+  background: var(--card);
+  border-radius: 28px;
+  padding: 28px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
+}
+
+.titulo-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  margin-bottom: 25px;
+}
+
+.titulo-box h2 {
+  font-size: 24px;
+  margin-bottom: 6px;
+}
+
+.titulo-box p {
+  color: var(--text2);
+  font-size: 14px;
+}
+
+.titulo-box strong {
+  background: var(--hover);
+  color: var(--purple);
+  padding: 9px 15px;
+  border-radius: 999px;
+  font-size: 14px;
+}
+
+/* COBRANÇA */
+
+.cobranca-card {
+  border-radius: 24px;
+  padding: 25px;
+  background: linear-gradient(135deg, rgba(124, 58, 237, 0.08), transparent);
+  border: 1px solid rgba(124, 58, 237, 0.15);
+}
+
+.cobranca-topo {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  margin-bottom: 24px;
+}
+
+.cobranca-topo h3 {
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+
+.cobranca-topo p {
+  color: var(--text2);
+}
+
+.status-aberto {
+  background: #fee2e2;
+  color: #b91c1c;
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.dados-cobranca {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  margin-bottom: 26px;
+}
+
+.dado-card {
+  border-radius: 20px;
+  padding: 20px;
+  min-height: 145px;
+}
+
+.dado-card i {
+  font-size: 24px;
+  margin-bottom: 18px;
+}
+
+.dado-card small {
+  display: block;
+  opacity: 0.75;
+  margin-bottom: 8px;
+}
+
+.dado-card strong {
+  color: inherit;
+  font-size: 15px;
+}
+
+.roxo-claro {
+  background: #f5f3ff;
+  color: #7c3aed;
+}
+
+.laranja-claro {
+  background: #fff7ed;
+  color: #ea580c;
+}
+
+.verde-claro {
+  background: #ecfdf5;
+  color: #059669;
+}
+
+.azul-claro {
+  background: #eff6ff;
+  color: #2563eb;
+}
+
+.acoes-cobranca {
+  display: flex;
+  justify-content: flex-end;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+/* BOTÕES */
+
+.btn-principal,
+.btn-secundario {
+  border: none;
+  border-radius: 15px;
+  padding: 14px 22px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 14px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.btn-principal {
+  background: var(--purple);
+  color: white;
+  box-shadow: 0 10px 20px rgba(124, 58, 237, 0.25);
+}
+
+.btn-principal:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 24px rgba(124, 58, 237, 0.32);
+}
+
+.btn-secundario {
+  background: var(--hover);
+  color: var(--purple);
+}
+
+.btn-secundario:hover {
+  background: #ede9fe;
+}
+
+/* PAGAMENTOS */
+
+.pagamento-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.pagamento-card {
+  border-radius: 22px;
+  padding: 24px;
+  min-height: 190px;
+  transition: 0.3s;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+
+.pagamento-card:hover {
+  transform: translateY(-5px);
+}
+
+.pagamento-card i {
+  font-size: 28px;
+  margin-bottom: 18px;
+}
+
+.pagamento-card h3 {
+  color: inherit;
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.pagamento-card p {
+  color: inherit;
+  opacity: 0.75;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.pagamento-card span {
+  display: inline-block;
+  margin-top: 18px;
+  background: white;
+  color: #7c3aed;
+  padding: 7px 13px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.pagamento-roxo {
+  background: #f5f3ff;
+  color: #7c3aed;
+  border-color: #ddd6fe;
+}
+
+.pagamento-verde {
+  background: #ecfdf5;
+  color: #059669;
+  border-color: #bbf7d0;
+}
+
+.pagamento-azul {
+  background: #eff6ff;
+  color: #2563eb;
+  border-color: #bfdbfe;
+}
+
+.selecionado {
+  box-shadow: 0 10px 25px rgba(124, 58, 237, 0.15);
+}
+
+/* LATERAL */
+
+.lateral-titulo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 22px;
+}
+
+.icone-lateral {
+  width: 52px;
+  height: 52px;
+  border-radius: 18px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  flex-shrink: 0;
+}
+
+.icone-lateral.roxo {
+  background: #7c3aed;
+}
+
+.icone-lateral.laranja {
+  background: #f97316;
+}
+
+.icone-lateral.vermelho {
+  background: #ef4444;
+}
+
+.lateral-titulo h2 {
+  font-size: 20px;
+}
+
+.lateral-titulo p {
+  color: var(--text2);
+  font-size: 13px;
+}
+
+.ir-controle {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.ir-controle button {
+  border: none;
+  border-radius: 14px;
+  padding: 0 18px;
+  background: #e5e7eb;
+  color: #9ca3af;
+  font-weight: 700;
+  cursor: not-allowed;
+}
+
+.estado-vazio {
+  background: var(--bg);
+  border-radius: 18px;
+  padding: 18px;
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+
+.estado-vazio i {
+  color: var(--purple);
+  font-size: 22px;
+}
+
+.estado-vazio p {
+  color: var(--text2);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.aviso-boleto {
+  background: #fff7ed;
+  border: 1px solid #fed7aa;
+}
+
+.aviso-boleto h2 {
+  color: #9a3412;
+}
+
+.aviso-boleto p {
+  color: #7c2d12;
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+.texto-lateral {
+  color: var(--text2);
+  font-size: 14px;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.btn-cheio {
+  width: 100%;
+}
+
+/* MODO ESCURO */
+
+body.dark-mode .box-financeiro,
+body.dark-mode .box-lateral,
+body.dark-mode .filtro-topo select,
+body.dark-mode .ir-controle select {
+  background: var(--card);
+}
+
+body.dark-mode .cobranca-card {
+  background: linear-gradient(135deg, rgba(157, 108, 255, 0.12), transparent);
+  border-color: var(--border);
+}
+
+body.dark-mode .estado-vazio {
+  background: var(--hover);
+}
+
+body.dark-mode .card-roxo,
+body.dark-mode .roxo-claro,
+body.dark-mode .pagamento-roxo {
+  background: rgba(124, 58, 237, 0.18);
+}
+
+body.dark-mode .card-laranja,
+body.dark-mode .laranja-claro,
+body.dark-mode .aviso-boleto {
+  background: rgba(249, 115, 22, 0.16);
+}
+
+body.dark-mode .card-verde,
+body.dark-mode .verde-claro,
+body.dark-mode .pagamento-verde {
+  background: rgba(5, 150, 105, 0.16);
+}
+
+body.dark-mode .card-azul,
+body.dark-mode .azul-claro,
+body.dark-mode .pagamento-azul {
+  background: rgba(37, 99, 235, 0.16);
+}
+
+body.dark-mode .aviso-boleto p {
+  color: #fed7aa;
+}
+
+body.dark-mode .aviso-boleto h2 {
+  color: #fdba74;
+}
+
+/* RESPONSIVO */
+
+@media (max-width: 1250px) {
+  .cards-resumo {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .financeiro-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .dados-cobranca {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .financeiro-topo {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .filtro-topo {
+    width: 100%;
+  }
+
+  .pagamento-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cobranca-topo {
+    flex-direction: column;
+  }
+
+  .ir-controle {
+    grid-template-columns: 1fr;
+  }
+
+  .ir-controle button {
+    height: 50px;
+  }
+}
+
+@media (max-width: 600px) {
+  main {
+    padding: 20px;
+  }
+
+  .financeiro-topo h1 {
+    font-size: 34px;
+  }
+
+  .cards-resumo {
+    grid-template-columns: 1fr;
+  }
+
+  .dados-cobranca {
+    grid-template-columns: 1fr;
+  }
+
+  .box-financeiro,
+  .box-lateral {
+    padding: 22px;
+    border-radius: 24px;
+  }
+
+  .acoes-cobranca {
+    flex-direction: column;
+  }
+
+  .btn-principal,
+  .btn-secundario {
+    width: 100%;
+  }
+}
